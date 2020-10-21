@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="196dp"
+        android:layout_height="105dp"
+        android:transitionName="logo_image"
+        app:srcCompat="@drawable/wu"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Hello there, Welcome!"
+        android:textColor="#333232"
+        android:transitionName="logo_text"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Input Your Data"
+        android:textColor="#000000"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:paddingTop="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Provide Three Mobile Numbers"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:paddingTop="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/Mob01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Num 01"
+            android:textSize="15dp"
+            android:paddingTop="8dp"
+            android:inputType="phone"></EditText>
+
+        <EditText
+            android:id="@+id/Mob02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Num 02"
+            android:textSize="15dp"
+            android:paddingTop="8dp"
+            android:inputType="phone"></EditText>
+
+        <EditText
+            android:id="@+id/Mob03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Num 03"
+            android:textColorLink="#000000"
+            android:textSize="15dp"
+            android:inputType="phone"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Word"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:paddingTop="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(We recommend to avoid words, we daily use)"
+            android:textColor="#000000"
+            android:textSize="10dp"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#000000"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+</LinearLayout>
