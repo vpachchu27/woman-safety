@@ -65,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/emer"
+        android:id="@+id/emergency"
         android:layout_width="145dp"
         android:layout_height="46dp"
         android:layout_marginStart="160dp"

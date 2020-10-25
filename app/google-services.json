@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "125774581081",
+    "firebase_url": "https://personal-safety-app-1fc84.firebaseio.com",
+    "project_id": "personal-safety-app-1fc84",
+    "storage_bucket": "personal-safety-app-1fc84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125774581081:android:df692f1490438a634f1048",
+        "android_client_info": {
+          "package_name": "com.example.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125774581081-4ug7ffsbgmotu720c19lnmshdccpd6nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA39t0j3FY_L2kTaqSC12pY2lhqFcEo81w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125774581081-4ug7ffsbgmotu720c19lnmshdccpd6nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

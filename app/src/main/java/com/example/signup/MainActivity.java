@@ -16,7 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
- Button register;
+private Button register;
+private Button emergency;
 
     private  static  int SPLASH_SCREEN=5000;
     Animation topAnim,bottomAnim;
@@ -29,7 +30,20 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-       // register=findViewById(R.id.);
+        register=(Button) findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLogin();
+            }
+        });
+        emergency=(Button) findViewById(R.id.emergency);
+        emergency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmergency();
+            }
+        });
 
         //Animation
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
@@ -56,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         },SPLASH_SCREEN);
+
+    }
+    public void openLogin()
+    {
+        Intent intent=new Intent(this,Login.class);
+        startActivity(intent);
+
+    }
+    public void openEmergency()
+    {
+        Intent intent=new Intent(this,Voiceuser.class);
+        startActivity(intent);
 
     }
 }
