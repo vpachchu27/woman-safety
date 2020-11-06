@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Login extends AppCompatActivity {
-TextInputEditText regname,regmob1,regmob2,regmob3,reginputText;
+EditText regname,regmob1,regmob2,regmob3,reginputText;
 private Button submit;
 
 FirebaseDatabase rootNode;

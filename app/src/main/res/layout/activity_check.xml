@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".check">
+<ImageView
+android:id="@+id/logoImage"
+android:layout_width="196dp"
+android:layout_height="105dp"
+android:transitionName="logo_image"
+app:srcCompat="@drawable/wu"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:fontFamily="@font/bungee"
+        android:text="Hello there, Welcome!"
+        android:textColor="#333232"
+        android:textSize="30sp"
+        android:transitionName="logo_text"></TextView>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:fontFamily="sans-serif-condensed-medium"
+android:text="Input Your Data"
+android:textColor="#000000"
+android:textSize="18sp"></TextView>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Your Name"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    </TextView>
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="15dp"></EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:text="Provide Three Mobile Numbers"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/mob"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    </TextView>
+
+    <EditText
+        android:id="@+id/mobile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Num 01"
+        android:inputType="phone"
+        android:paddingTop="8dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="15dp"></EditText>
+
+    <EditText
+        android:id="@+id/mobile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Num 02"
+        android:inputType="phone"
+        android:paddingTop="8dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="15dp"></EditText>
+
+    <EditText
+        android:id="@+id/mobile3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Num 03"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="15dp"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Key Word"
+        android:textColor="#000000"
+        android:textSize="15dp">    </TextView>
+
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="15dp"></EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(We recommend to avoid words, we daily use)"
+        android:textColor="#000000"
+        android:textSize="10dp"></TextView>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#000000"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+</LinearLayout>

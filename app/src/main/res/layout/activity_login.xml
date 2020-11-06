@@ -20,10 +20,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
-        android:text="Hello there, Welcome!"
+        android:text="Hello there, Welcome Back!"
         android:textColor="#333232"
-        android:transitionName="logo_text"
-        android:textSize="30sp"></TextView>
+        android:textSize="30sp"
+        android:transitionName="logo_text"></TextView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -124,10 +124,10 @@
         android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
         android:background="#000000"
-        android:textColor="#fff"
-        android:fontFamily="sans-serif-condensed-medium"/>
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="SUBMIT"
+        android:textColor="#fff" />
 
 
 </LinearLayout>
