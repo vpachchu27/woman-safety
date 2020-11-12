@@ -89,7 +89,7 @@ public class SendAlert extends FragmentActivity implements OnMapReadyCallback {
 
                     String message = "Latitude = " + myLatidude + " Longitude = " + myLongitude;
                     SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phoneNumber,null,message,null,null);
+                   // smsManager.sendTextMessage("223",null,message,null,null);
                 }
                 catch (Exception e){
                     e.printStackTrace();

@@ -4,7 +4,21 @@ public class users {
     private String name;
     private long mobileno1;
     private long mobileno2;
+
+
+
+    public users(String name, long mobileno1, long mobileno2, long mobileno3, String password, String inputText) {
+        this.name = name;
+        this.mobileno1 = mobileno1;
+        this.mobileno2 = mobileno2;
+        this.mobileno3 = mobileno3;
+        this.password = password;
+        this.inputText = inputText;
+    }
+
     private long mobileno3;
+    private String password;
+
 
     public users()
     {
@@ -19,6 +33,13 @@ public class users {
         this.name = name;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
     public long getMobileno1() {
         return mobileno1;
     }

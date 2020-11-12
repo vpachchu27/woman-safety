@@ -59,7 +59,7 @@ private Button emergency;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,SendAlert.class);
+                Intent intent = new Intent(MainActivity.this,Voiceuser.class);
                Pair[] pairs=new Pair[2];
                pairs[0]=new Pair<View,String>(image,"logo_image1");
                pairs[1]=new Pair<View,String>(logo,"logo_text");
@@ -74,7 +74,7 @@ private Button emergency;
     }
     public void openLogin()
     {
-        Intent intent=new Intent(this,userAuthentication.class);
+        Intent intent=new Intent(this,check.class);
         startActivity(intent);
 
     }
