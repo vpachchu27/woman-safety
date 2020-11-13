@@ -36,7 +36,7 @@ public class Voiceuser extends AppCompatActivity {
 
 
     private static final int REQUEST_CODE_SPEECH_INPUT=1000;
-    TextView mTextTv,phNo,Detail;
+    TextView mTextTv,phNo1,phNo2,phNo3,Detail,mess,word;
     ImageButton mVoiceBtn;
     Button cli;
 
@@ -55,16 +55,15 @@ public class Voiceuser extends AppCompatActivity {
 
         mTextTv=findViewById(R.id.textTv);
         Detail=findViewById(R.id.textdet);
-        cli=findViewById(R.id.click);
-        phNo=findViewById(R.id.phN);
+        mess=findViewById(R.id.textmess);
+        word=findViewById(R.id.textword);
+        //cli=findViewById(R.id.click);
+        phNo1=findViewById(R.id.phN1);
+        phNo2=findViewById(R.id.phN2);
+        phNo3=findViewById(R.id.phN3);
 
 
-        cli.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
       //  mVoiceBtn=findViewById(R.id.voiceBtn);
 
        speak();
@@ -97,6 +96,7 @@ public class Voiceuser extends AppCompatActivity {
             case REQUEST_CODE_SPEECH_INPUT:{
                 if(resultCode==RESULT_OK && null!=data){
                     ArrayList<String> result =data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    word.setText("Key word");
                     mTextTv.setText(result.get(0));
                     //sendAlert();
                     final String text= mTextTv.getText().toString();
@@ -108,8 +108,15 @@ public class Voiceuser extends AppCompatActivity {
                             String ph1=snapshot.child("mobileno1").getValue().toString();
                             String ph2=snapshot.child("mobileno2").getValue().toString();
                             String ph3=snapshot.child("mobileno3").getValue().toString();
-                            phNo.setText(ph1);
-                            Detail.setText("Don't worry "+name+"! our goal is to protect you..");
+
+
+                            phNo1.setText(ph1);
+                            mess.setText("Don't worry "+name+"! our goal is to protect you..");
+                            Detail.setText("Mobile numbers you entered..");
+                            phNo1.setText(ph1);
+                            phNo2.setText(ph2);
+                            phNo3.setText(ph3);
+
 
                             String message = "It seems "+name+" is feeling unsafe.. Please make sure she/he is safe!"  ;
                             SmsManager smsManager = SmsManager.getDefault();

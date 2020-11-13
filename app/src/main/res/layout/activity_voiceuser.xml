@@ -20,46 +20,80 @@
         app:srcCompat="@drawable/wu"
         android:transitionName="logo_image1"/>
     <TextView
-        android:id="@+id/textdet"
+        android:id="@+id/textmess"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text=" "
         android:fontFamily="@font/bungee"
+        android:textColor="#6A6A6E"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textdet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/bangers"
+        android:text=" "
         android:textColor="#000"
         android:textSize="20sp" />
-<TextView
-        android:id="@+id/textTest"
+
+    <TextView
+
+        android:id="@+id/phN1"
+        android:fontFamily="@font/bangers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="#6A6A6E"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/phN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text=" "
+        android:textColor="#6A6A6E"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/phN3"
+        android:fontFamily="@font/bangers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="#6A6A6E"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/textword"
+        android:fontFamily="@font/bangers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text=" "
         android:textColor="#000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:hint=" "/>
 <TextView
         android:id="@+id/textTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:fontFamily="@font/bangers"
         android:text=" "
-        android:textColor="#000"
-        android:textSize="20sp" />
+        android:textColor="#6A6A6E"
+        android:textSize="15sp" />
 
 
-    <Button
-        android:id="@+id/click"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="click me" />
 
-    <TextView
-        android:id="@+id/phN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+
 </LinearLayout>
 
 </RelativeLayout>

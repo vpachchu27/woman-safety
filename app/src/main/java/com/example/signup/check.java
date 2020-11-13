@@ -148,10 +148,17 @@ public class check extends AppCompatActivity {
 
     private Boolean validateKW(){
         String val=rginputText.getEditableText().toString();
+        DatabaseReference reffOfKW =FirebaseDatabase.getInstance().getReference().child("users").child("inputText");
+
 
         if(val.isEmpty())
         {
             rginputText.setError("Field cannot be empty");
+            return false;
+        }
+        else if(val.equals(reffOfKW))
+        {
+            rginputText.setError("Key word already exist! try something new.");
             return false;
         }
         else
